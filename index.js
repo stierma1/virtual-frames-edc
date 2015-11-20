@@ -1,3 +1,4 @@
+"use strict"
 var Jimp = require("jimp");
 
 class VirtualFrame {
