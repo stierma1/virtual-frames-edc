@@ -40,7 +40,7 @@ class VirtualFrame {
 
   makeConcrete(image){
     return new Promise( (resolve, reject) => {
-      var img = image.crop(this.xOffset, this.yOffset, this.width, this.height)
+      var img = image.clone().crop(this.xOffset, this.yOffset, this.width, this.height)
       if(this.resize){
         img = img.resize(this.minX, this.minY)
       }
